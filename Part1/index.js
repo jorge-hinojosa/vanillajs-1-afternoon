@@ -73,5 +73,8 @@ function play(move) {
 }
 
 function resetGame() {
-    location.reload();
+    board = [];
+    for(let i = 0; i <= 8; i++) {
+        document.getElementById(i).innerText = '';
+    }
 }
